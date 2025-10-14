@@ -15,9 +15,6 @@
 
 ---
 
-## 🖼️ Aperçu
-
-![Interface MagicBoxRogue](assets/screenshot.png)
 
 ---
 
@@ -26,13 +23,21 @@
 ### Prérequis
 
 - CMake ≥ 3.10
-- MinGW ou Ninja
+- MinGW 
 - GLFW
 - ImGui (inclus dans `external/`)
+
+💡 Remarque : Le projet utilise std::filesystem, donc nécessite un compilateur compatible C++17 ou supérieur (ex. : g++ ≥ 8, clang ≥ 7, MSVC ≥ 2017).
+
+cmake .. -G "MinGW Makefiles" -DCMAKE_C_COMPILER="C:/mingw64/bin/gcc.exe" -DCMAKE_CXX_COMPILER="C:/mingw64/bin/g++.exe"
+github.com/glfw/glfw
+github.com/ocornut/imgui
 
 ### Compilation
 
 ```bash
+git clone https://github.com/ton-utilisateur/MagicBoxRogue.git
+cd MagicBoxRogue
 mkdir build
 cd build
 cmake .. -G "MinGW Makefiles"
