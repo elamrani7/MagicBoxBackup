@@ -4,7 +4,6 @@ Créer une interface graphique en C++ avec ImGui permettant de sauvegarder autom
 
 1 Prompt pour initialiser le projet
 
-💬 Prompt à donner à Claud ia (dans VS Code ou cursor)
 
 “Agis comme un ingénieur logiciel senior.
 Crée un projet C++ cross-platform (Windows/Linux) utilisant CMake.
