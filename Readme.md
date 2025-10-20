@@ -39,6 +39,10 @@ github.com/ocornut/imgui
 git clone https://github.com/ton-utilisateur/MagicBoxRogue.git
 cd MagicBoxRogue
 mkdir build
+mkdir external
+git clone github.com/glfw/glfw
+git clone github.com/ocornut/imgui
 cd build
 cmake .. -G "MinGW Makefiles"
 cmake --build .
+mingw32-make
